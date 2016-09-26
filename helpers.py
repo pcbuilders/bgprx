@@ -22,7 +22,7 @@ def get_jsonp(url):
   try:
     req     = request(url, urlfetch.GET)
     if req.status_code == 200 and req.content:
-      return {'status': 'ok', 'msg': json.loads(req.content[1:-1])}
+      return {'status': 'ok', 'msg': str(req.content)}
     else:
       return error(req.content)
   except urlfetch_errors.Error as e:
