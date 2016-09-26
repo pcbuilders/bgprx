@@ -29,7 +29,7 @@ def get_jsonp(url):
     return error(e)
 
 def request(url, method):
-  return urlfetch.Fetch(url, headers=headers(), follow_redirects=False, deadline=15, method=method)
+  return urlfetch.Fetch(url, headers=headers(), follow_redirects=False, deadline=5, method=method)
 
 def headers():
   return {'User-Agent': 'okhttp3'}

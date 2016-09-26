@@ -8,7 +8,7 @@ api_version: 1
 threadsafe: yes
 automatic_scaling:
   max_concurrent_requests: 80
-  max_pending_latency: 300000ms
+  max_pending_latency: 15000ms
   max_idle_instances: 1
 # Handlers define how to route requests to your application.
 handlers:
