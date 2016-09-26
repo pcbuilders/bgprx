@@ -1,5 +1,4 @@
 from google.appengine.api import urlfetch, urlfetch_errors
-import json
 
 def check_is_live(sid):
   try:
